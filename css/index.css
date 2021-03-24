@@ -1,0 +1,187 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 导航栏，包括左边的logo和右边的导航标签 */
+nav {
+  height: 3rem;
+  background-color: #333;
+  z-index: 2;
+  position: fixed;
+  width: 80%;
+  padding: 10px 10%;
+}
+
+.body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  padding-bottom: 3rem;
+  height: 100%;
+}
+
+/* 导航标签 */
+nav ul {
+  float: right;
+}
+
+ul.nav-list li {
+  float: left;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #000;
+}
+
+
+
+.banner-wrapper {
+  padding-top: 4rem;
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: hidden;
+  box-sizing: content-box;
+  z-index: -1;
+}
+
+.banner-list {
+  width: 500%;
+  height: 640px;
+  position: relative;
+  animation: banner-swipe 15s ease-in infinite;
+}
+
+.item img {
+  width: 20%;
+  height: 640px;
+  float: left;
+}
+
+@keyframes banner-swipe {
+  0% {
+    left: 0;
+  }
+
+  23% {
+    left: 0;
+  }
+
+  25% {
+    left: -100%;
+  }
+
+  48% {
+    left: -100%;
+  }
+
+  50% {
+    left: -200%;
+  }
+
+  73% {
+    left: -200%;
+  }
+
+  75% {
+    left: -300%;
+  }
+
+  98% {
+    left: -300%;
+  }
+
+  100% {
+    left: -400%;
+  }
+}
+
+main {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 16px;
+  height: 30em;
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 3em;
+}
+
+.display {
+  height: 27rem;
+  width: 15rem;
+  text-align: center;
+}
+
+.display-content {
+  height: 25rem;
+}
+
+.intro {
+  height: 12rem;
+  overflow: hidden;
+}
+
+img.display-image {
+  height: 9em;
+  width: 9em;
+
+}
+
+h1 {
+  padding: 0.4rem;
+}
+
+h1.display-title,
+h1.display-artist,
+h1.most-viewed,
+a.display-link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+
+
+footer {
+  line-height: 3rem;
+  text-align: center;
+  /* position: relative; */
+  margin-top: -3rem;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #000;
+  color: #999;
+}
+
+a.logo {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  text-decoration: none;
+  color: white;
+
+}
